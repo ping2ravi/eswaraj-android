@@ -25,7 +25,7 @@ import javax.inject.Inject;
  * Use the {@link SplashFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SplashFragment extends Fragment implements FacebookLoginInterface, LoginSkipInterface, ServerDataInterface {
+public class SplashFragment extends Fragment implements FacebookLoginInterface, LoginSkipInterface {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -162,11 +162,7 @@ public class SplashFragment extends Fragment implements FacebookLoginInterface, 
         }
     }
 
-    @Override
-    public void onServerDataAvailable() {
-        //Hide login and skip button since login is done
-        buttonLogin.setVisibility(View.INVISIBLE);
-        buttonSkip.setVisibility(View.INVISIBLE);
+    public void onCategoriesDataAvailable() {
         serverDataDownloadDone = true;
         if(loginOrSkipDone) {
             takeUserToHomeScreen();

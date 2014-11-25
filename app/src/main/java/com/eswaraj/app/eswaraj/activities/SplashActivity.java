@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
 import com.eswaraj.app.eswaraj.R;
+import com.eswaraj.app.eswaraj.config.ServerAccessEnums;
 import com.eswaraj.app.eswaraj.fragments.SplashFragment;
+import com.eswaraj.app.eswaraj.helpers.SharedPreferencesHelper;
+import com.eswaraj.app.eswaraj.interfaces.DatastoreInterface;
 import com.eswaraj.app.eswaraj.interfaces.FacebookLoginInterface;
 import com.eswaraj.app.eswaraj.interfaces.LoginSkipInterface;
 import com.eswaraj.app.eswaraj.location.LocationUtil;
@@ -46,7 +49,6 @@ public class SplashActivity extends FragmentActivity implements FacebookLoginInt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
 
 
         splashFragment = SplashFragment.newInstance("", "");
