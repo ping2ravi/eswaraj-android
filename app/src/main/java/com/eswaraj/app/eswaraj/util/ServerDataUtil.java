@@ -17,15 +17,14 @@ import com.eswaraj.app.eswaraj.interfaces.ServerDataInterface;
 import org.json.JSONArray;
 
 import java.util.Date;
-
+/*
+This CLASS NEED TO BE DELETED
+ */
+@Deprecated
 public class ServerDataUtil {
     private ServerDataInterface context;
     private SharedPreferencesHelper sharedPreferencesHelper;
     private NetworkAccessHelper networkAccessHelper;
-
-    public ServerDataUtil() {
-        this.context = null;
-    }
 
     public ServerDataUtil(ServerDataInterface context, SharedPreferencesHelper sharedPreferencesHelper) {
         this.context = context;

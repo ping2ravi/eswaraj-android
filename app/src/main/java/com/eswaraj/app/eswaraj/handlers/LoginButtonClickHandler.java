@@ -1,10 +1,8 @@
 package com.eswaraj.app.eswaraj.handlers;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 
-import com.eswaraj.app.eswaraj.interfaces.FacebookLoginInterface;
 import com.eswaraj.app.eswaraj.util.FacebookLoginUtil;
 
 public class LoginButtonClickHandler implements View.OnClickListener{
@@ -22,7 +20,7 @@ public class LoginButtonClickHandler implements View.OnClickListener{
     }
     @Override
     public void onClick(View view) {
-        facebookLoginUtil.startFacebookLogin();
+        //facebookLoginUtil.startFacebookLogin();
     }
 
 }
